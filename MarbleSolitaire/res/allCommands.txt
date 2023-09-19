@@ -1,0 +1,17 @@
+load test.ppm test 
+brighten 10 test test-brighten 
+darken 10 test-brighten test-darken 
+horizontal-flip test-darken test-horizontal-flip 
+vertical-flip test-horizontal-flip test-vertical-flip 
+red-component test-vertical-flip test-red-component 
+green-component test-red-component test-green-component 
+blue-component test-green-component test-blue-component 
+luma-component test-blue-component test-luma-component 
+intensity-component test-luma-component test-intensity-component 
+value-component test-intensity-component test-value-component 
+blur test-value-component test-blur 
+sharpen test-blur test-sharpen 
+greyscale test-sharpen test-greyscale 
+sepia test-greyscale test-scale 
+save testOutput.ppm test-scale 
+quit
